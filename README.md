@@ -1,5 +1,9 @@
 # Healthcare Claims Cost Forecasting with Meta Prophet
 ## 📋 Project Overview
+
+<img width="1008" height="492" alt="image" src="https://github.com/user-attachments/assets/4a7b3f1d-f75c-41ab-9fc8-450ccafd17f4" />
+
+
 This notebook demonstrates the use of Meta Prophet, a robust time series forecasting library developed by Meta (formerly Facebook), to model and forecast synthetic healthcare claims cost data. The dataset simulates realistic cost behavior such as:
 
 📈 Long-term upward trends
