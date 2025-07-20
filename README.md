@@ -3,28 +3,29 @@
 
 This notebook demonstrates the use of Meta Prophet, a robust time series forecasting library developed by Meta (formerly Facebook), to model and forecast synthetic healthcare claims cost data. The dataset simulates realistic cost behavior such as:
 
-📈 Long-term upward trends
-
-🌦 Seasonal patterns (e.g. flu season spikes in winter months)
-
-🎄 Holiday effects (e.g. increased or decreased cost around December)
-
-📉 Random noise to emulate real-world unpredictability
+    📈 Long-term upward trends
+    
+    🌦 Seasonal patterns (e.g. flu season spikes in winter months)
+    
+    🎄 Holiday effects (e.g. increased or decreased cost around December)
+    
+    📉 Random noise to emulate real-world unpredictability
 
 Prophet is ideal for this use case due to its ability to handle:
 
-  1. Additive and multiplicative seasonality
-
-  2. Missing data
-
-  3. Outliers
-
-  4. Seasonaity and Holiday effects
+      1. Additive and multiplicative seasonality
+    
+      2. Missing data
+    
+      3. Outliers
+    
+      4. Seasonaity and Holiday effects
 
 ## 🔢 Dataset Description
 Key columns
-  1. ds	Timestamp in YYYY-MM-DD format (daily granularity)
-  2. y	revenue
+
+    Target Variable: y — total daily revenue across a group of retail stores
+    Date Column: ds — date 
 
 
 **fig 1.**  Overview of the data, I used the first 3.5 years train the prophet model, forecasting the last 1 year.
@@ -52,12 +53,12 @@ Key columns
 ⚠️ Initially, U.S. holidays were used, which led to worse results. Switching to Ecuador-specific holidays improved performance noticeably.
 
 **Insights:**
-
-The model successfully captured growth trends and seasonality.
-
-Including local holidays had a measurable impact on forecast accuracy.
-
-Error remains moderate, adding oil price might help improve the model because Educador economy is heavily depending on the oil price.
+    
+    The model successfully captured growth trends and seasonality.
+    
+    Including local holidays had a measurable impact on forecast accuracy.
+    
+    Error remains moderate, adding oil price might help improve the model because Educador economy is heavily depending on the oil price.
 
 <img width="1105" height="397" alt="image" src="https://github.com/user-attachments/assets/667b8b78-6687-449c-97bc-fae2b3273ce7" />
 
